@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+body {
+	width: 100%;
+	height: auto; 
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 120px;
+    background: url(burning-8211-bw-g.jpg) no-repeat center center;
+    background-size: cover;
+
+}
+
+
+h1 {
+	padding: 30px;
+}
+
+div #search {
+	margin: 20px;
+}
+

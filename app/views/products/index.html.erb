@@ -1,17 +1,16 @@
 <h1>Bowman Leather</h1>
-
-<a href="/products?sort=price">Sort by Price ||</a>
-<a href="/products?sort=price DESC">Sort by Descending Price ||</a>
-<a href="/products?sort=name">Sort by Name ||</a>
-<a href="/products?sort=discount">Discount Items ||</a>
+<div class="search">
+<a href="/products?sort=price&&order=DESC">$ Low to High ||</a>
+<a href="/products?sort=price&&order=ASC">$ High to Low ||</a>
+<a href="/products?sort=name">Alphabetical ||</a>
+<a href="/products?discount=true">Discount Items ||</a>
 <a href="/products/random">Random Items</a>
 
 <%= form_tag "/search", method: :post do %>
-<%= label_tag :user_search, "Search" %>
-<%= text_field_tag :user_search %>
+<%= text_field_tag :search %>
 <%= submit_tag "Search" %>
-    <% end %>
-
+<% end %>
+</div class="search">
 
 
 <div class="row">
